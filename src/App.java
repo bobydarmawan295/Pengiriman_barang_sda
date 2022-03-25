@@ -1,7 +1,55 @@
 public class App {
     public static void main(String[] args) throws Exception {
         // Pengguna jasa Barang (QUEUE)
+             String pengirim;
+        String penerima;
+        String NoHP;
+        String alamatKirim;
+        String alamatTerima;
+        
 
+        Queue<String> nama_pengirim = new LinkedList<>();
+        Queue<String> nama_penerima = new LinkedList<>();
+        Queue<String> No_HP = new LinkedList<>();
+        Queue<String> alamat_pengirim = new LinkedList<>();
+        Queue<String> alamat_penerima = new LinkedList<>();
+
+        Scanner masukkan_namaPengirim = new Scanner(System.in);
+        Scanner masukkan_namaPenerima = new Scanner(System.in);
+        Scanner masukkan_NoHP = new Scanner(System.in);
+        Scanner masukkan_AlPengirim = new Scanner(System.in);
+        Scanner masukkan_AlPenerima = new Scanner(System.in);
+
+        System.out.println("Masukkan Nama Pengirim :");
+        pengirim=masukkan_namaPengirim.nextLine();
+        nama_pengirim.add(pengirim);
+
+        System.out.println("Masukkan Nama Penerima :");
+        penerima=masukkan_namaPenerima.nextLine();
+        nama_penerima.add(penerima);
+        
+        System.out.println("Masukkan No HP :");
+        NoHP=masukkan_NoHP.nextLine();
+        No_HP.add(NoHP);
+
+        System.out.println("Masukkan Alamat Pengirim :");
+        alamatKirim=masukkan_AlPengirim.nextLine();
+        alamat_pengirim.add(alamatKirim);
+
+        System.out.println("Masukkan Alamat Penerima :");
+        alamatTerima=masukkan_AlPenerima.nextLine();
+        alamat_penerima.add(alamatTerima);
+
+        System.out.println("Nama Pengirim \t:"+nama_pengirim);
+        System.out.println("Nama Penerima \t:"+nama_penerima);
+        System.out.println("No HP   \t:"+No_HP);
+        System.out.println("Alamat Kirim \t:"+alamat_pengirim);
+        System.out.println("Alamat Terima \t:"+alamat_penerima);
+
+
+    }
+    
+}
 
 
 
