@@ -261,6 +261,61 @@ public class App {
 
         // Barang telah sampai ke penerima (arraylist)
 
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class jpbArraylist {
+    public static void main(String[] args) {
+		int a = 0;
+		int b = 0;
+		int c = 0;
+		ArrayList <String> list_komen = new ArrayList <>();
+        Scanner masukkan = new Scanner (System.in);
+        System.out.println("Feedback Penerima");
+        System.out.println("-----------------");
+		
+		while (true){
+			System.out.println("Menu : \n1. Lihat ulasan\n2. Beri ulasan\n3. Keluar\n\nPilih :");
+			int pilihan = masukkan.nextInt();
+			if (pilihan == 1){
+				if (list_komen.isEmpty()){
+				System.out.println("Tidak ada ulasan");
+				}
+				
+				else{
+					for(int d = 0;d < a;d++){
+						System.out.println(list_komen.get(d)+"\n");
+					}
+				}
+			}
+			else if (pilihan == 2){
+				System.out.println("\nMasukkan Nama: ");
+				String name = masukkan.next();
+				System.out.println("Nama: "+name);
+
+				System.out.println("\nPenilaian Pelayanan: ");
+				System.out.println("1\t2\t3\t4\t5");
+				System.out.println("\nNilai: ");
+				Integer pilih = masukkan.nextInt();
+				System.out.println("\nMasukkan Komentar: ");
+				String komen = masukkan.next();
+				list_komen.add("\nNama\t\t: "+name+"\nPenilaian\t:"+pilih+"\nKomentar\t:"+komen);
+		
+				System.out.println("\nNama\t\t: "+name+"\nPenilaian\t: "+pilih+"\nKomentar\t:"+komen);
+		
+				a = a +1;
+				b = b +1;
+				c = c +1;
+			}
+			else if(pilihan == 3)
+				System.exit(0);
+			else{
+				System.out.println("Pilihan tidak ditemukan");
+			}
+		}
+		
+    }
+}
 
 
         
