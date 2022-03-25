@@ -1,5 +1,24 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        // Pengguna jasa Barang (QUEUE)
+
+
+
+
+        // Barang (Linked List)
+
+
+
+
+        // Sorting barang berdasarkan tujuan(Stack)
+
+
+
+
+        // Barang telah sampai ke penerima (arraylist)
+
+
+
+        
     }
 }
