@@ -281,9 +281,7 @@ public class App {
         		System.out.println("\t\t\t\t---------------------------------------");
         		System.out.println("\t\t\t\t 2. Lihat Stack Pengiriman Barang ");
         		System.out.println("\t\t\t\t---------------------------------------");
-        		System.out.println("\t\t\t\t 3. Selesai ");
-        		System.out.println("\t\t\t\t---------------------------------------");
-        		System.out.print("\t\t\t\t MASUKAN PILIHAN: ");
+            		System.out.print("\t\t\t\t MASUKAN PILIHAN: ");
 
 
         		int input=pilih.nextInt();
@@ -312,10 +310,6 @@ public class App {
                 
                 		break;
 
-            		case 3:
-                		System.exit(0);
-                		break;
-            
             		default:
             		System.err.println("\n\t\t\t\t Pilihan tidak tersedia!");
             		System.out.println("");
