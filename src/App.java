@@ -256,6 +256,75 @@ public class App {
 
         // Sorting barang berdasarkan tujuan(Stack)
 
+	import java.util.Scanner;
+	import java.util.Stack;
+
+    		boolean bool = true;
+    
+    		String metodekirim;
+    		String kodetujuan;
+    		String kodebarang;
+
+    		Stack<String> kode_barang = new Stack<String>();
+    		Stack<String> kode_tujuan = new Stack<String>();
+    		Stack<String> metode_kirim = new Stack<String>();
+    
+    		Scanner kodbarang = new Scanner(System.in);
+    		Scanner kodtujuan = new Scanner(System.in);
+    		Scanner metodepengirim = new Scanner(System.in);
+    		Scanner pilih = new Scanner(System.in);
+    
+
+    		do{
+        		System.out.println("\t\t\t\t=======================================");
+        		System.out.println("\t\t\t\t 1. Input Kode dan Metode Pengiriman Barang ");
+        		System.out.println("\t\t\t\t---------------------------------------");
+        		System.out.println("\t\t\t\t 2. Lihat Stack Pengiriman Barang ");
+        		System.out.println("\t\t\t\t---------------------------------------");
+        		System.out.println("\t\t\t\t 3. Selesai ");
+        		System.out.println("\t\t\t\t---------------------------------------");
+        		System.out.print("\t\t\t\t MASUKAN PILIHAN: ");
+
+
+        		int input=pilih.nextInt();
+        		switch(input){
+            		case 1:
+                		System.out.print("\n\t\t\t\t Kode Tujuan: ");
+                		kodetujuan = kodtujuan.nextLine();
+                		kode_tujuan.push(kodetujuan);
+                		System.out.print("\t\t\t\t Kode Barang: ");
+                		kodebarang = kodbarang.nextLine();
+				kode_barang.push(kodebarang);
+                		System.out.print("\t\t\t\t Metode Pengiriman: ");
+                		metodekirim = metodepengirim.nextLine();
+                		metode_kirim.push(metodekirim);
+                		break;
+              
+            		case 2:
+                		System.out.println("\n\t\t\t\t Stack Barang Pengiriman: "+kode_barang);
+                		System.out.println("\t\t\t\t Tujuan Barang Pengiriman: "+kode_tujuan);
+                		System.out.println("\t\t\t\t Metode Pengiriman       : "+metode_kirim);
+				
+				System.out.println("");	
+                		System.out.println("\n\t\t\t\t Kode barang selanjutnya: "+kode_barang.peek());
+                		System.out.println("\t\t\t\t Kota Tujuan selanjutnya: "+kode_tujuan.peek());                		
+                		System.out.println("\t\t\t\t Pengiriman melalui     : "+metode_kirim.peek());
+                
+                		break;
+
+            		case 3:
+                		System.exit(0);
+                		break;
+            
+            		default:
+            		System.err.println("\n\t\t\t\t Pilihan tidak tersedia!");
+            		System.out.println("");
+        		}
+    		}
+    		while(bool);
+	}
+}
+
 
 
 
