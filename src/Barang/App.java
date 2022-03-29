@@ -15,6 +15,7 @@ public class App {
         ArrayList <String> list_komen = new ArrayList <>();
         boolean isContinue = true;
         boolean isContinue2 = true;
+        boolean isContinue3 = true;
         String pilihanUser;
         User user = new User();
         Barang barang = new Barang();
@@ -153,6 +154,9 @@ public class App {
                                 System.out.println("Pilihan tidak tersedia");
                                 break;
                             }
+                                System.out.print("\nApakah Anda ingin melanjutkan [y/n]? ");
+                                pilihanUser = input.next();
+                                isContinue3 = pilihanUser.equalsIgnoreCase("y");
                         }
                         
                        
