@@ -177,34 +177,39 @@ public class App {
                     Node root = new Node(2);
                     root.left = new Node(3);
                     root.right = new Node(5);
-                    root.left.left = new Node(7);
-                    root.left.right = new Node(11);
-                    root.right.left = new Node(13);
+                    root.right.left = new Node(7);
+                    root.right.right = new Node(11);
+                    root.left.left = new Node(13);
                     root.left.left.left = new Node(17);
                     root.left.left.right = new Node(19);
-                    root.left.right.right = new Node(23);
-                    root.right.left.right = new Node(29);
+                
                             
                     fungsi treeOrder = new fungsi();
+
+                    System.out.println("\n\n\tGambar pohon biner:\n");
+                    System.out.println("\t       2\n\t      / \\\n\t     3   5\n\t    / \t/ \\ \n\t   13  11  7\n\t  / \\\n\t 17 19\n\n");
                     
                     //PreOrder traversal
+                    System.out.println("Pre-Order");
                     treeOrder.preOrder(root);
-                    System.out.println("");
+                    System.out.println("\n");
                     
                     //InOrder traversal
+                    System.out.println("In-Order");
                     treeOrder.inOrder(root);
-                    System.out.println();
+                    System.out.println("\n");
                     
                     //PostOrder traversal
+                    System.out.println("Post-Order");
                     treeOrder.postOrder(root);
-                    System.out.println();
+                    System.out.println("\n");
                 break;
 
                 case "5":
                     System.out.println("Terima kasih (^ ^)");
                     isContinue = false;
                     break;
-                    
+
                 default:
                     System.out.println("Pilihan tidak tersedia");
                     break;
