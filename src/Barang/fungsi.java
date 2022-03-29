@@ -256,14 +256,14 @@ public class fungsi {
     
   }
 
-  class Node {
-    String data;
+  static class Node {
+    int data;
     Node left;
     Node right;
     
 
-    public Node(String string) {
-        data = string;
+    public Node(int number) {
+        data = number;
         left = right = null;
     };
   }
