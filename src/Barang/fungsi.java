@@ -172,8 +172,8 @@ public class fungsi {
               if(depan == belakang){
                   depan = belakang = null;
               }else{
-                  while(temp.next != null){
-                    temp.next = temp;
+                  while(temp.next != belakang){
+                    temp = temp.next;
                   }
                   belakang = temp;
                   temp.next = null;
@@ -246,7 +246,7 @@ public class fungsi {
             System.out.println("|===========================================================================|");
 
             while(bantu != null){
-                System.out.printf("|  %-8s |  %-10s | %-8s | %-9s | %-9s | %-10s |" ,bantu.nama,bantu.jenis,bantu.jumlah,bantu.ekspedisi,bantu.harga,bantu.payment);
+                System.out.printf("|  %-8s |  %-10s | %-8s | %-9s | %-9s | %-11s  |" ,bantu.nama,bantu.jenis,bantu.jumlah,bantu.ekspedisi,bantu.harga,bantu.payment);
                 System.out.println();
                 bantu = bantu.next;
             
