@@ -102,6 +102,8 @@ public class App {
                                     break;
                                 case "3":
                                     barang.hapusBelakang();
+                                    barang.hapusBelakang();
+                                    System.out.println("Barang telah dihapus");
                                     break;
                                 case "4":
                                     barang.pushBarang();
@@ -186,7 +188,19 @@ public class App {
                             
                     fungsi treeOrder = new fungsi();
 
-                    System.out.println("\n\n\tGambar pohon biner:\n");
+                    System.out.println("Kode  tujuan Pengiriman barang");
+                    System.out.println("""
+                        2 : Sumatera Barat -> Provinsi
+                        3 : Padang         -> Kota
+                        5 : Bukittinggi    -> Kota
+                        11 : Mandiangin    -> Kecamatan
+                        7  : Gugukpanjang  -> Kecamatan
+                        13 : Kuranji       -> Kecamatan
+                        17 : Kalumbuk      -> Kelurahan
+                        19 : Korong Gadang -> Kelurahan
+                    """);
+
+                    System.out.println("\n\tGambar pohon biner:\n");
                     System.out.println("\t       2\n\t      / \\\n\t     3   5\n\t    / \t/ \\ \n\t   13  11  7\n\t  / \\\n\t 17 19\n\n");
                     
                     //PreOrder traversal
